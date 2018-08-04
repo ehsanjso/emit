@@ -8,14 +8,27 @@ class Watch extends React.Component {
     super(props);
 
     this.state = {
+      milliSec: 0,
+      elapsed: 0
     };
     this.timer = null;
   }
   onStart = () => {
+    this.timer = setInterval(() => {
       this.setState(prevState => ({
+        milliSec:
+          prevState.elapsed +
+          moment
+            .duration(moment().diff(this.props.timer.start))
+            .asMilliseconds()
       }));
+    }, 100);
   };
   onPause = () => {
+    clearInterval(this.timer);
+    this.setState(prevState => ({
+      elapsed: prevState.milliSec
+    }));
   };
 
   render() {

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Watch from "./components/Watch";
-import Menu from "./components/Menu";
 import CopyRight from "./components/CopyRight";
 import { Provider } from "react-redux";
 import configureStore from "./store/configureStore";
@@ -17,12 +16,12 @@ class App extends Component {
             <img className="logo" src="./logo.png" alt="logo" />
             <p className="avatar-name">Ehsan Jso</p>
             <Avatar
+              shape="square"
               className="avatar"
               src="https://lh3.googleusercontent.com/-H7Ikcbwm_Po/AAAAAAAAAAI/AAAAAAAAAB0/v6Za5_NUHV8/photo.jpg"
             />
           </div>
           <Watch />
-          <Menu />
           <CopyRight name="jso" />
         </div>
       </Provider>

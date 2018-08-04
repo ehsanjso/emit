@@ -22,9 +22,11 @@ class Menu extends React.Component {
       this.props.changeState("pause");
       this.props.setEndTime(time);
       this.showModal();
+      this.props.onPause();
     } else if (this.props.timer.state === "pause") {
       this.props.changeState("counting");
       this.props.setStartTime(time);
+      this.props.onStart();
     }
   };
 

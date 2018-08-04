@@ -52,7 +52,7 @@
 }
 
 .watch {
-  box-shadow: inset 1px 2px 20px #171b21;
+  box-shadow: inset 1px 2px 20px #381a30;
   font-size: 5em;
   font-weight: 100;
   color: #eee;
@@ -60,7 +60,7 @@
   margin: 0;
   padding: 0.2em 0;
   /* background-color: #222831; */
-  background: #000 url(./images/body-bg7.png);
+  background: #522546 url(/static/media/body-bg7.acd64266.png);
   width: 100%;
   /* border: 1px solid #eee; */
   /* border: 1px solid #222831; */
@@ -74,7 +74,7 @@
   width: 300px;
   height: 50px;
   /* border: 1px solid #eee; */
-  border: 1px solid #00adb5;
+  border: 1px solid #88304e;
   overflow: hidden;
   margin-top: 15px;
   border-radius: 5px;
@@ -93,7 +93,7 @@
   height: 100%;
   font-size: 30px;
   /* color: #eee; */
-  color: #00adb5;
+  color: #88304e;
   font-family: "Roboto";
   font-weight: 300;
   transition: background 0.1s ease;
@@ -103,14 +103,14 @@
 
 .first {
   /* border-right: 1px solid #eee; */
-  border-right: 1px solid #00adb5;
+  border-right: 1px solid #88304e;
 }
 
 .btn:hover {
   /* background: #eee;
   color: #222831; */
   /* background: #00adb5; */
-  background: #00adb5 url(./images/body-bg7.png);
+  background: #88304e url(/static/media/body-bg7.acd64266.png);
   color: #eee;
 }
 
